@@ -1,4 +1,28 @@
 {
+  "titaniumManifest": {
+    "guid": "c30561d9-98a3-de12-ff1f-4ad1203e5dbd"
+  },
+  "titaniumifier": {
+    "transforms": {
+      "aliasify": {
+        "aliases": {
+          "underscore": "lodash",
+          "--process--": "process"
+        },
+        "global": true
+      }
+    },
+    "excludes": [
+      "path",
+      "fs",
+      "util",
+      "date-now",
+      "lodash",
+      "process"
+    ],
+    "ignores": [
+    ]
+  },
   "name": "nedb",
   "version": "1.8.0",
   "author": {
@@ -27,6 +51,7 @@
     "underscore": "~1.4.4"
   },
   "devDependencies": {
+    "aliasify": "^2.1.0",
     "chai": "^3.2.0",
     "mocha": "1.4.x",
     "request": "2.9.x",
