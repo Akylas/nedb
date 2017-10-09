@@ -1,5 +1,6 @@
 {
   "titaniumManifest": {
+    "moduleid":"nedb",
     "guid": "c30561d9-98a3-de12-ff1f-4ad1203e5dbd"
   },
   "titaniumifier": {
@@ -16,7 +17,9 @@
       "path",
       "fs",
       "util",
+      "events",
       "date-now",
+      "localforage",
       "lodash",
       "process"
     ],
@@ -63,9 +66,6 @@
     "test": "./node_modules/.bin/mocha --reporter spec --timeout 10000"
   },
   "main": "index",
-  "browser": {
-    "./lib/customUtils.js": "./browser-version/browser-specific/lib/customUtils.js",
-    "./lib/storage.js": "./browser-version/browser-specific/lib/storage.js"
-  },
+ 
   "license": "SEE LICENSE IN LICENSE"
 }
